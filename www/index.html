@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/pw/ADCreHfQvqozCFjwOm3EXkAahfkQW4-kyKtq17RelUznhJU3bEhCEMwO0zDD0ZKzEEeryKmZR7jV0h_enMb9L0lvQ5yTSZvX9dMoizjhh0yGbbPNFlMhbXmDcMV7EuRNpvOyU8yHQ56si1Tu9AKZ4O6e4b8=w522-h725-s-no-gm?authuser=0">
+		<title>Portfolio_Museum</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<style>
+			body{
+				font-family: sans-serif;
+				font-size: 2rem; /*multiply by 2 the fount of browser*/
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				margin: 0;
+			}
+			#app{
+				width: 100%;
+				height: 100%;
+				/*overflow: hidden;*/
+				position: relative;
+			}
+
+			#textbox{
+				position: absolute;
+				bottom: 0;
+				left: 10%;
+				right: 10%;
+				bottom: 2vh;
+				min-height: 2vh;
+				background: white;
+				border-radius: 3px;
+				outline-style: solid;
+				padding: 1rem;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				word-spacing: 0.2rem;
+				display: none;
+				filter: drop-shadow(0 0 0.75 rgb(112, 112, 112));
+			}
+
+			.ui-text{
+				margin: 0;
+				user-select: none;
+				text-align: center;
+			}
+
+			.ui-Close-Button{
+				font-family: sans-serif;
+				border-style: none;
+				border-radius: 3px;
+				padding: 1rem;
+				font-size: inherit;
+				display: none;
+				align-self: flex-end;
+				width: 100%;
+			}
+
+			.note{
+				position: absolute;
+				left: 0%;
+				text-align: center;
+				/*top: 1vh;*/
+				top: 67vh;
+				display: flex;
+				flex-direction: column;
+				color: rgb(238, 238, 238);
+				user-select: none;
+				background-color: black;
+				padding: 2%;
+				width: 100%
+			}
+		</style>
+
+		<div id = "app">
+			<div id="ui">
+				<p class="note">
+					Tap/click to move<br>
+					<br>
+					up: Temple of Portfolium.
+					<br>
+					left: Personal and academic Projects.
+					<br>
+					right: Skills and studies.
+				</p>
+			</div>
+			<div id = "textbox">
+				<div>
+					<p id="dialogue" class = "ui-text"></p>
+					<button id="Close" class = "ui-Close-Button">Close</button>
+				</div>
+			</div>
+			<canvas id = "game" style = "width: 100%; height: 100%;"></canvas>
+		</div> 
+		<script src="main.js"></script>
+	</body>
+</html>
