@@ -14,4 +14,5 @@ Head straight up to the temple of Portfolium to learn about my professional expe
 
 - This website was developed using the kaboom.js javascript package.
 - All art assets with the exeption of the main character, the hooded man, and the founder, come from the <a href = "https://opengameart.org/content/zoria-tileset">Zoria Tileset</a>.
+- TileMaps have been made using the software <a href = "https://www.mapeditor.org/">Tiled</a>
 
